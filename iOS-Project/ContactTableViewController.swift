@@ -10,6 +10,8 @@ import UIKit
 
 class ContactTableViewController: UITableViewController {
 
+    let collation = UILocalizedIndexedCollation.currentCollation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +27,11 @@ class ContactTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //show indexTitles in right hand side tableView
+    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String] {
+        return collation.sectionIndexTitles
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
