@@ -11,14 +11,10 @@ import UIKit
 class TimeTableViewCell: UITableViewCell {
     // MARK: Properties
     
-//Libo Jia test
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    //lIBO
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
