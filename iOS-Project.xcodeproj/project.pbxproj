@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B561E11CDDD6420007BB8E /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B561E01CDDD6420007BB8E /* TimeTableViewCell.swift */; };
 		1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6C71CDDC034006164D8 /* AppDelegate.swift */; };
 		1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6C91CDDC034006164D8 /* ViewController.swift */; };
 		1200D6CD1CDDC034006164D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200D6CB1CDDC034006164D8 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B561E01CDDD6420007BB8E /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		1200D6C41CDDC034006164D8 /* iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1200D6C71CDDC034006164D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1200D6C91CDDC034006164D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
 				1200D6CB1CDDC034006164D8 /* Main.storyboard */,
+				01B561E01CDDD6420007BB8E /* TimeTableViewCell.swift */,
 				1200D6D11CDDC034006164D8 /* Assets.xcassets */,
 				1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */,
 				1200D6D61CDDC034006164D8 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B561E11CDDD6420007BB8E /* TimeTableViewCell.swift in Sources */,
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
 				1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */,
 				1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */,
@@ -489,6 +493,7 @@
 				1200D6F11CDDC034006164D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1200D6F21CDDC034006164D8 /* Build configuration list for PBXNativeTarget "iOS-ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +502,7 @@
 				1200D6F41CDDC034006164D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1200D6F51CDDC034006164D8 /* Build configuration list for PBXNativeTarget "iOS-ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +511,7 @@
 				1200D6F71CDDC034006164D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
