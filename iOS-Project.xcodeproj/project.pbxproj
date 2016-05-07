@@ -16,6 +16,7 @@
 		1200D6D51CDDC034006164D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */; };
 		1200D6E01CDDC034006164D8 /* iOS_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6DF1CDDC034006164D8 /* iOS_ProjectTests.swift */; };
 		1200D6EB1CDDC034006164D8 /* iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6EA1CDDC034006164D8 /* iOS_ProjectUITests.swift */; };
+		1200D6F91CDDD950006164D8 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1200D6E61CDDC034006164D8 /* iOS-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1200D6EA1CDDC034006164D8 /* iOS_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_ProjectUITests.swift; sourceTree = "<group>"; };
 		1200D6EC1CDDC034006164D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
 				1200D6CB1CDDC034006164D8 /* Main.storyboard */,
+				1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */,
 				01B561E01CDDD6420007BB8E /* TimeTableViewCell.swift */,
 				1200D6D11CDDC034006164D8 /* Assets.xcassets */,
 				1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
 				1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */,
 				1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */,
+				1200D6F91CDDD950006164D8 /* TimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
