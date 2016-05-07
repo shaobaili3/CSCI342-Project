@@ -18,6 +18,8 @@ class TimeTableViewCell: UITableViewCell {
         // Initialization code
     }
     
+    //LIBO
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
