@@ -18,6 +18,9 @@
 		1200D6EB1CDDC034006164D8 /* iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6EA1CDDC034006164D8 /* iOS_ProjectUITests.swift */; };
 		1200D6F91CDDD950006164D8 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */; };
 		1200D6FB1CDDDBA2006164D8 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6FA1CDDDBA2006164D8 /* ContactTableViewController.swift */; };
+		12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */; };
+		12B899B21CDF0D17000FF5BE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899B11CDF0D17000FF5BE /* Background.swift */; };
+		12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12B899B41CDF0DF7000FF5BE /* Login.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1200D6EC1CDDC034006164D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		1200D6FA1CDDDBA2006164D8 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		12B899B11CDF0D17000FF5BE /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Background.swift; path = ../Background.swift; sourceTree = "<group>"; };
+		12B899B41CDF0DF7000FF5BE /* Login.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		1200D6BB1CDDC034006164D8 = {
 			isa = PBXGroup;
 			children = (
+				12B899B41CDF0DF7000FF5BE /* Login.mp4 */,
 				1200D6C61CDDC034006164D8 /* iOS-Project */,
 				1200D6DE1CDDC034006164D8 /* iOS-ProjectTests */,
 				1200D6E91CDDC034006164D8 /* iOS-ProjectUITests */,
@@ -110,11 +117,13 @@
 				1200D6CB1CDDC034006164D8 /* Main.storyboard */,
 				1200D6FA1CDDDBA2006164D8 /* ContactTableViewController.swift */,
 				1200D6F81CDDD950006164D8 /* TimeTableViewController.swift */,
+				12B899B11CDF0D17000FF5BE /* Background.swift */,
 				01B561E01CDDD6420007BB8E /* TimeTableViewCell.swift */,
 				1200D6D11CDDC034006164D8 /* Assets.xcassets */,
 				1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */,
 				1200D6D61CDDC034006164D8 /* Info.plist */,
 				1200D6CE1CDDC034006164D8 /* iOS_Project.xcdatamodeld */,
+				12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */,
 			);
 			path = "iOS-Project";
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */,
 				1200D6D51CDDC034006164D8 /* LaunchScreen.storyboard in Resources */,
 				1200D6D21CDDC034006164D8 /* Assets.xcassets in Resources */,
 				1200D6CD1CDDC034006164D8 /* Main.storyboard in Resources */,
@@ -272,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B561E11CDDD6420007BB8E /* TimeTableViewCell.swift in Sources */,
+				12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */,
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
+				12B899B21CDF0D17000FF5BE /* Background.swift in Sources */,
 				1200D6FB1CDDDBA2006164D8 /* ContactTableViewController.swift in Sources */,
 				1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */,
 				1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="gIl-1Q-lsw">
             <objects>
-                <viewController id="nIy-n1-vfd" sceneMemberID="viewController">
+                <viewController id="nIy-n1-vfd" customClass="ViewController" customModule="iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ULm-jz-pGs"/>
                         <viewControllerLayoutGuide type="bottom" id="TRf-Gp-UcB"/>
@@ -17,15 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkF-ah-e1O">
-                                <rect key="frame" x="274" y="286" width="48" height="32"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <segue destination="cmh-i1-8a6" kind="show" id="hqu-tT-8QB"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YeC-Dl-e7V">
+                                <rect key="frame" x="150" y="88" width="300" height="290"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-Fz-02a">
+                                        <rect key="frame" x="50" y="0.0" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="dUO-6d-ir9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-qW-LF0">
+                                        <rect key="frame" x="50" y="130" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="FDD-Nc-9vh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkF-ah-e1O">
+                                        <rect key="frame" x="129" y="260" width="42" height="30"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <segue destination="cmh-i1-8a6" kind="show" id="hqu-tT-8QB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EQb-hq-Z35"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.27058823529999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YeC-Dl-e7V" firstAttribute="centerX" secondItem="gZq-Xh-ca1" secondAttribute="centerX" id="8y8-dg-wUc"/>
+                            <constraint firstItem="YeC-Dl-e7V" firstAttribute="centerY" secondItem="gZq-Xh-ca1" secondAttribute="centerY" id="ULd-Gu-X8N"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kF5-xh-cWj" userLabel="First Responder" sceneMemberID="firstResponder"/>

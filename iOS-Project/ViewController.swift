@@ -8,11 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController:Background {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("test", ofType: "mp4")!)
+        let video = NSBundle.mainBundle().pathForResource("Login", ofType:"mp4")
+        print(video)
+        let url = NSURL.fileURLWithPath(video!)
+        self.videoFrame = view.frame
+        self.fillMode = .ResizeAspectFill
+        self.alwaysRepeat = true
+        self.sound = true
+        self.startTime = 12.0
+        self.duration = 4.0
+        self.alpha = 0.7
+        self.backgroundColor = UIColor.blackColor()
+        self.contentURL = url
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
     override func didReceiveMemoryWarning() {
