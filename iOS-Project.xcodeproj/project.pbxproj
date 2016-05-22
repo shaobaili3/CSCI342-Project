@@ -19,6 +19,7 @@
 		1200D6F91CDDD950006164D8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6F81CDDD950006164D8 /* ScheduleViewController.swift */; };
 		1200D6FB1CDDDBA2006164D8 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */; };
 		122DB97F1CF1C08C00C33672 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */; };
+		122DB9811CF1DED800C33672 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB9801CF1DED800C33672 /* PasswordViewController.swift */; };
 		12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */; };
 		12B899B21CDF0D17000FF5BE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899B11CDF0D17000FF5BE /* Background.swift */; };
 		12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12B899B41CDF0DF7000FF5BE /* Login.mp4 */; };
@@ -60,6 +61,7 @@
 		1200D6F81CDDD950006164D8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
 		122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		122DB9801CF1DED800C33672 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
 		12B899B11CDF0D17000FF5BE /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Background.swift; path = ../Background.swift; sourceTree = "<group>"; };
 		12B899B41CDF0DF7000FF5BE /* Login.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login.mp4; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
+				122DB9801CF1DED800C33672 /* PasswordViewController.swift */,
 				1200D6CB1CDDC034006164D8 /* Main.storyboard */,
 				122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */,
 				1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B561E11CDDD6420007BB8E /* TimeTableViewCell.swift in Sources */,
+				122DB9811CF1DED800C33672 /* PasswordViewController.swift in Sources */,
 				12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */,
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
 				12B899B21CDF0D17000FF5BE /* Background.swift in Sources */,
