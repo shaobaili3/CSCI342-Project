@@ -1,5 +1,5 @@
 //
-//  TimeTableViewController.swift
+//  SpeakersTableViewController.swift
 //  iOS-Project
 //
 //  Created by SABai on 7/05/2016.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class TimeTableViewController: UITableViewController {
+class SpeakersTableViewController: UITableViewController {
 
+    let collation = UILocalizedIndexedCollation.currentCollation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +27,11 @@ class TimeTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //show indexTitles in right hand side tableView
+    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String] {
+        return collation.sectionIndexTitles
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
