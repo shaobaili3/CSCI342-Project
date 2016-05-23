@@ -30,13 +30,19 @@ class ViewController:Background, UITextFieldDelegate {
             })
         }
         else{
-                    let alert: UIAlertController = UIAlertController(title: "Not a valid location!", message: "Please reselect a valid location", preferredStyle: .Alert)
+                    let alert: UIAlertController = UIAlertController(title: "Incorrect account or password. Enter again", message: "", preferredStyle: .Alert)
             
-                    //Create and add the Cancel action
-                    let cancelAction: UIAlertAction = UIAlertAction(title: "OK", style: .Cancel) { action -> Void in
-                        self.dismissViewControllerAnimated(true, completion: nil)
+            
+                    let tryAction: UIAlertAction = UIAlertAction(title: "Retry", style: .Cancel) { action -> Void in
                     }
-                    alert.addAction(cancelAction)
+                    alert.addAction(tryAction)
+            
+                    let HELPAction: UIAlertAction = UIAlertAction(title: "Help", style: .Default) { action -> Void in
+                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Password") as! UINavigationController
+                        self.presentViewController(viewController, animated: true, completion: nil)
+                    }
+                    alert.addAction(HELPAction)
+            
                     alert.view.setNeedsLayout()
                     self.presentViewController(alert, animated: true, completion: nil)
             

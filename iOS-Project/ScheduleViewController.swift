@@ -1,5 +1,5 @@
 //
-//  SpeakersTableViewController.swift
+//  ScheduleViewController.swift
 //  iOS-Project
 //
 //  Created by SABai on 7/05/2016.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class SpeakersTableViewController: UITableViewController {
+class ScheduleViewController: UITableViewController {
 
-    let collation = UILocalizedIndexedCollation.currentCollation()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,59 +25,28 @@ class SpeakersTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    //show indexTitles in right hand side tableView
-    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String] {
-        return collation.sectionIndexTitles
-    }
-    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "Tim Cook"
-        cell.detailTextLabel?.text = "@tim_cook"
-        
-        let image = UIImage(named: "Cook2")
-        let newImage = resizeImage(image!, toTheSize: CGSizeMake(70, 70))
-        let cellImageLayer: CALayer?  = cell.imageView!.layer
-        cellImageLayer!.cornerRadius = 35
-        cellImageLayer!.masksToBounds = true
-        cell.imageView!.image = newImage
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
+    */
 
-    
-    //cut image to circle
-    func resizeImage(image:UIImage, toTheSize size:CGSize)->UIImage{
-        
-        
-        let scale = CGFloat(max(size.width/image.size.width,
-            size.height/image.size.height))
-        let width:CGFloat  = image.size.width * scale
-        let height:CGFloat = image.size.height * scale;
-        
-        let rr:CGRect = CGRectMake( 0, 0, width, height);
-        
-        UIGraphicsBeginImageContextWithOptions(size, false, 0);
-        image.drawInRect(rr)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext();
-        return newImage
-    }
-    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
