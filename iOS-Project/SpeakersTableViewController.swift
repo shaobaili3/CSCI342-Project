@@ -55,8 +55,7 @@ class SpeakersTableViewController: UITableViewController {
         let cellImageLayer: CALayer?  = cell.imageView!.layer
         cellImageLayer!.cornerRadius = 35
         cellImageLayer!.masksToBounds = true
-        cell.imageView!.image = newImage
-        
+        cell.imageView!.image = newImage        
 
         return cell
     }
