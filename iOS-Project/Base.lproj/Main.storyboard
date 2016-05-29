@@ -147,7 +147,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSL-Xs-fLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-827" y="288"/>
+            <point key="canvasLocation" x="-947" y="296"/>
         </scene>
         <!--Map-->
         <scene sceneID="FOc-JL-8dJ">
@@ -448,15 +448,15 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Cell" id="nJl-le-nmy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="nJl-le-nmy">
                                 <rect key="frame" x="0.0" y="72" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nJl-le-nmy" id="hQa-zS-RC0">
-                                    <rect key="frame" x="0.0" y="0.0" width="561" height="119"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AvX-y2-mv8">
-                                            <rect key="frame" x="103" y="8" width="450" height="103"/>
+                                            <rect key="frame" x="103" y="8" width="456" height="103"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media in Journalistic Inquiry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpW-WL-zAp">
                                                     <rect key="frame" x="0.0" y="0.0" width="257" height="20"/>
@@ -465,7 +465,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-ad-Rxb">
-                                                    <rect key="frame" x="0.0" y="26" width="450" height="51"/>
+                                                    <rect key="frame" x="0.0" y="26" width="434" height="51"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -512,9 +512,6 @@
                                         <constraint firstItem="Rcx-YR-bvY" firstAttribute="leading" secondItem="hQa-zS-RC0" secondAttribute="leadingMargin" id="v2h-BS-B2M"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Q8z-3r-zzB" kind="show" trigger="accessoryAction" id="zGC-0I-o48"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -553,9 +550,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkZ-fA-4Y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="cbY-99-YGx" customClass="MyScheduleViewController" customModule="iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7L7-EU-MHH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="tol-f8-YDm">
+                            <rect key="frame" x="0.0" y="72" width="600" height="508"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-OM-gdk">
+                                    <rect key="frame" x="165" y="198" width="270" height="113"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjI-85-ne7">
+                                            <rect key="frame" x="93" y="0.0" width="85" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add events by swiping in Schedule." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-iz-3vD">
+                                            <rect key="frame" x="0.0" y="42" width="270" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWf-J9-Lye">
+                                            <rect key="frame" x="82" y="83" width="106" height="30"/>
+                                            <state key="normal" title="Go to Schedule">
+                                                <color key="titleColor" red="0.1176470588" green="0.27058823529999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="cmh-i1-8a6" kind="presentation" animates="NO" id="Bcz-Q5-Evz"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ncN-OM-gdk" firstAttribute="centerY" secondItem="tol-f8-YDm" secondAttribute="centerY" id="Mr2-9d-aUI"/>
+                                <constraint firstItem="ncN-OM-gdk" firstAttribute="centerX" secondItem="tol-f8-YDm" secondAttribute="centerX" id="kvD-aR-y7K"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="DWM-yY-RWz">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -575,9 +609,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Schedule" id="QKR-bA-Nsa"/>
+                    <connections>
+                        <outlet property="emptyView" destination="tol-f8-YDm" id="Ayq-lM-TT6"/>
+                    </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="645" y="-414"/>
+            <point key="canvasLocation" x="645" y="-435"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tyz-fQ-UJW">
@@ -588,7 +625,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VsN-og-h2B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GSC-Zw-t0W">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -596,62 +633,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMR-Ns-XNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377" y="-789"/>
-        </scene>
-        <!--My Schedule-->
-        <scene sceneID="Sqg-Gq-tnK">
-            <objects>
-                <viewController storyboardIdentifier="empty" id="BMQ-St-H3R" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7hR-OK-y4p"/>
-                        <viewControllerLayoutGuide type="bottom" id="dDw-WI-4yV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ftM-9O-ZLM">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GWd-q7-M5V">
-                                <rect key="frame" x="267" y="232" width="270" height="113"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-OM-gdk">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="113"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjI-85-ne7">
-                                                <rect key="frame" x="93" y="0.0" width="85" height="22"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add events by swiping in Schedule." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-iz-3vD">
-                                                <rect key="frame" x="0.0" y="42" width="270" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWf-J9-Lye">
-                                                <rect key="frame" x="82" y="83" width="106" height="30"/>
-                                                <state key="normal" title="Go to Schedule">
-                                                    <color key="titleColor" red="0.1176470588" green="0.27058823529999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="cmh-i1-8a6" kind="presentation" animates="NO" id="Bcz-Q5-Evz"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="GWd-q7-M5V" firstAttribute="centerX" secondItem="ftM-9O-ZLM" secondAttribute="centerX" id="3CC-Gv-zww"/>
-                            <constraint firstItem="GWd-q7-M5V" firstAttribute="centerY" secondItem="ftM-9O-ZLM" secondAttribute="centerY" id="bu4-WB-dKh"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="My Schedule" id="YC6-4k-rmv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sJy-kP-gam" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1427" y="-141"/>
         </scene>
         <!--My Schedule-->
         <scene sceneID="i3L-BH-zNe">
@@ -667,12 +648,12 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="BMQ-St-H3R" kind="relationship" relationship="rootViewController" id="6Vo-6C-A5e"/>
+                        <segue destination="cbY-99-YGx" kind="relationship" relationship="rootViewController" id="yga-fD-8x8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayJ-kU-adl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-73" y="-414"/>
+            <point key="canvasLocation" x="-49" y="-470"/>
         </scene>
         <!--User Profile-->
         <scene sceneID="99m-Q0-QwI">
@@ -710,6 +691,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1176470588" green="0.27058823529999998" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -759,6 +743,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Bcz-Q5-Evz"/>
-        <segue reference="zGC-0I-o48"/>
     </inferredMetricsTieBreakers>
 </document>

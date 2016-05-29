@@ -61,7 +61,12 @@ class ScheduleViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
+        
+        if indexPath.row%3 == 0
+        {
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            cell.accessoryView?.hidden
+        }
         // Configure the cell...
 
         return cell
