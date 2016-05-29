@@ -12,7 +12,10 @@ class MyScheduleViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("empty") as! UIViewController
+            self.presentViewController(viewController, animated: true, completion: nil)
+        })
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

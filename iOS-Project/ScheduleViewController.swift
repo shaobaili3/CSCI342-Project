@@ -9,7 +9,12 @@
 import UIKit
 
 class ScheduleViewController: UITableViewController {
+    @IBOutlet weak var days: UISegmentedControl!
+    @IBOutlet weak var dateLabel: UILabel!
 
+    @IBAction func segmentValueChanged(sender: AnyObject) {
+        self.tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
@@ -30,23 +35,38 @@ class ScheduleViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch(days.selectedSegmentIndex)
+        {
+        case 0:
+            dateLabel.text = "Tuesday  6 December 2016"
+            break
+        case 1:
+            dateLabel.text = "Wednesday  7 December 2016"
+            break
+        case 2:
+            dateLabel.text = "Thursday  8 December 2016"
+            break
+        default:
+            break
+            
+        }
+        return 5
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
