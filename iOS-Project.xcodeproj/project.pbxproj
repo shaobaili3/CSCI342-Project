@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6C71CDDC034006164D8 /* AppDelegate.swift */; };
 		1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6C91CDDC034006164D8 /* ViewController.swift */; };
-		1200D6CD1CDDC034006164D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200D6CB1CDDC034006164D8 /* Main.storyboard */; };
 		1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6CE1CDDC034006164D8 /* iOS_Project.xcdatamodeld */; };
 		1200D6D21CDDC034006164D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1200D6D11CDDC034006164D8 /* Assets.xcassets */; };
 		1200D6D51CDDC034006164D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,10 @@
 		122DB97F1CF1C08C00C33672 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */; };
 		122DB9811CF1DED800C33672 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB9801CF1DED800C33672 /* PasswordViewController.swift */; };
 		122DB9831CF20BF600C33672 /* SpeakersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB9821CF20BF600C33672 /* SpeakersDetailViewController.swift */; };
+		12326C701CFB0C8B00013AEC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12326C6F1CFB0C8B00013AEC /* MapViewController.swift */; };
+		12ACC89E1CFC122800BFB5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12ACC89D1CFC122800BFB5EA /* Main.storyboard */; };
+		12ACC8A81CFCAB9900BFB5EA /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACC8A71CFCAB9900BFB5EA /* SessionDetailViewController.swift */; };
+		12ACC8AA1CFCC32B00BFB5EA /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACC8A91CFCC32B00BFB5EA /* MeTableViewController.swift */; };
 		12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */; };
 		12B899B21CDF0D17000FF5BE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899B11CDF0D17000FF5BE /* Background.swift */; };
 		12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12B899B41CDF0DF7000FF5BE /* Login.mp4 */; };
@@ -47,7 +50,6 @@
 		1200D6C41CDDC034006164D8 /* iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1200D6C71CDDC034006164D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1200D6C91CDDC034006164D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1200D6CC1CDDC034006164D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1200D6CF1CDDC034006164D8 /* iOS_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Project.xcdatamodel; sourceTree = "<group>"; };
 		1200D6D11CDDC034006164D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1200D6D41CDDC034006164D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,10 @@
 		122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		122DB9801CF1DED800C33672 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		122DB9821CF20BF600C33672 /* SpeakersDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersDetailViewController.swift; sourceTree = "<group>"; };
+		12326C6F1CFB0C8B00013AEC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		12ACC89D1CFC122800BFB5EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		12ACC8A71CFCAB9900BFB5EA /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
+		12ACC8A91CFCC32B00BFB5EA /* MeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
 		12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
 		12B899B11CDF0D17000FF5BE /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Background.swift; path = ../Background.swift; sourceTree = "<group>"; };
 		12B899B41CDF0DF7000FF5BE /* Login.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login.mp4; sourceTree = "<group>"; };
@@ -118,10 +124,10 @@
 		1200D6C61CDDC034006164D8 /* iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				12ACC89D1CFC122800BFB5EA /* Main.storyboard */,
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
 				122DB9801CF1DED800C33672 /* PasswordViewController.swift */,
-				1200D6CB1CDDC034006164D8 /* Main.storyboard */,
 				12C4E63E1CF2FE3400C58ABC /* MyScheduleViewController.swift */,
 				122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */,
 				1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */,
@@ -133,6 +139,9 @@
 				1200D6CE1CDDC034006164D8 /* iOS_Project.xcdatamodeld */,
 				12B899AF1CDF0CCB000FF5BE /* VideoCutter.swift */,
 				122DB9821CF20BF600C33672 /* SpeakersDetailViewController.swift */,
+				12326C6F1CFB0C8B00013AEC /* MapViewController.swift */,
+				12ACC8A71CFCAB9900BFB5EA /* SessionDetailViewController.swift */,
+				12ACC8A91CFCC32B00BFB5EA /* MeTableViewController.swift */,
 			);
 			path = "iOS-Project";
 			sourceTree = "<group>";
@@ -265,7 +274,7 @@
 				12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */,
 				1200D6D51CDDC034006164D8 /* LaunchScreen.storyboard in Resources */,
 				1200D6D21CDDC034006164D8 /* Assets.xcassets in Resources */,
-				1200D6CD1CDDC034006164D8 /* Main.storyboard in Resources */,
+				12ACC89E1CFC122800BFB5EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +302,13 @@
 				122DB9811CF1DED800C33672 /* PasswordViewController.swift in Sources */,
 				122DB9831CF20BF600C33672 /* SpeakersDetailViewController.swift in Sources */,
 				12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */,
+				12ACC8A81CFCAB9900BFB5EA /* SessionDetailViewController.swift in Sources */,
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
 				12B899B21CDF0D17000FF5BE /* Background.swift in Sources */,
 				1200D6FB1CDDDBA2006164D8 /* SpeakersTableViewController.swift in Sources */,
 				1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */,
+				12326C701CFB0C8B00013AEC /* MapViewController.swift in Sources */,
+				12ACC8AA1CFCC32B00BFB5EA /* MeTableViewController.swift in Sources */,
 				1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */,
 				122DB97F1CF1C08C00C33672 /* UserProfileViewController.swift in Sources */,
 				1200D6F91CDDD950006164D8 /* ScheduleViewController.swift in Sources */,
@@ -336,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1200D6CB1CDDC034006164D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1200D6CC1CDDC034006164D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1200D6D31CDDC034006164D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

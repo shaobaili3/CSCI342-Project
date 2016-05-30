@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //set Naviationbar front color
         UINavigationBar.appearance().tintColor = .whiteColor()
-        
         return true
     }
 

@@ -11,14 +11,16 @@ import UIKit
 class MyScheduleViewController: UITableViewController {
 
     
+    
     @IBOutlet weak var emptyView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.emptyView.hidden = true
-//        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("empty") as! UIViewController
-//            self.presentViewController(viewController, animated: false, completion: nil)
-//        })
+        self.tableView.scrollEnabled = false
+        
+        self.title = "Session"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:  UIBarButtonSystemItem.Action, target:  self, action: Selector("shareButton"))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,6 +28,12 @@ class MyScheduleViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    func shareButton() {
+        let activityViewController = UIActivityViewController(activityItems: ["context you want to share" as NSString], applicationActivities: nil)
+        self.presentViewController(activityViewController, animated: true, completion: {})
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,18 +48,18 @@ class MyScheduleViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 3
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

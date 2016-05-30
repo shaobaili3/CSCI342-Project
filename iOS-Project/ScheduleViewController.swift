@@ -11,14 +11,19 @@ import UIKit
 class ScheduleViewController: UITableViewController {
     @IBOutlet weak var days: UISegmentedControl!
     @IBOutlet weak var dateLabel: UILabel!
-
+    
     @IBAction func segmentValueChanged(sender: AnyObject) {
         self.tableView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.tableView.tableFooterView = UIView()
+        
+        //delete line between naviation bar and view
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -73,25 +78,50 @@ class ScheduleViewController: UITableViewController {
     }
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let add = UITableViewRowAction(style: .Default, title: "Add to My Schedule") { (action, indexPath) in
+        }
+        
+        let delete = UITableViewRowAction(style: .Destructive, title: "Remove from My Schedule") { (action, indexPath) in
+            print(indexPath.row)
+        }
+        
+        let share = UITableViewRowAction(style: .Default, title: "Share") { (action, indexPath) in
+            // share item at indexPath
+            let activityViewController = UIActivityViewController(activityItems: ["context you want to share" as NSString], applicationActivities: nil)
+            self.presentViewController(activityViewController, animated: true, completion: {})
+        }
+        add.backgroundColor = UIColor.lightGrayColor()
+        share.backgroundColor = UIColor.orangeColor()
+        
+        if (indexPath.row%3 == 0)
+        {
+            return [delete, share]
+        }
+        else
+        {
+            return [share, add]
+        }
     }
-    */
+    
+    // Override to support editing the table view.
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//            // Delete the row from the data source
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        } else if editingStyle == .Insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
+    
 
     /*
     // Override to support rearranging the table view.
