@@ -16,6 +16,7 @@
 		1200D6EB1CDDC034006164D8 /* iOS_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6EA1CDDC034006164D8 /* iOS_ProjectUITests.swift */; };
 		1200D6F91CDDD950006164D8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6F81CDDD950006164D8 /* ScheduleViewController.swift */; };
 		1200D6FB1CDDDBA2006164D8 /* SpeakersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */; };
+		1209E0441CFD622F00106C77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1209E0431CFD622F00106C77 /* GoogleService-Info.plist */; };
 		122DB97F1CF1C08C00C33672 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */; };
 		122DB9811CF1DED800C33672 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB9801CF1DED800C33672 /* PasswordViewController.swift */; };
 		122DB9831CF20BF600C33672 /* SpeakersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122DB9821CF20BF600C33672 /* SpeakersDetailViewController.swift */; };
@@ -62,6 +63,7 @@
 		1200D6EC1CDDC034006164D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1200D6F81CDDD950006164D8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		1200D6FA1CDDDBA2006164D8 /* SpeakersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersTableViewController.swift; sourceTree = "<group>"; };
+		1209E0431CFD622F00106C77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		122DB97E1CF1C08C00C33672 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		122DB9801CF1DED800C33672 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		122DB9821CF20BF600C33672 /* SpeakersDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersDetailViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		1200D6C61CDDC034006164D8 /* iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				1209E0431CFD622F00106C77 /* GoogleService-Info.plist */,
 				12ACC89D1CFC122800BFB5EA /* Main.storyboard */,
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
@@ -273,6 +276,7 @@
 			files = (
 				12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */,
 				1200D6D51CDDC034006164D8 /* LaunchScreen.storyboard in Resources */,
+				1209E0441CFD622F00106C77 /* GoogleService-Info.plist in Resources */,
 				1200D6D21CDDC034006164D8 /* Assets.xcassets in Resources */,
 				12ACC89E1CFC122800BFB5EA /* Main.storyboard in Resources */,
 			);
