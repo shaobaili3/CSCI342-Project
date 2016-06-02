@@ -50,7 +50,7 @@ class MyScheduleViewController: UITableViewController {
         //self.emptyView.hidden = true
         self.tableView.scrollEnabled = false
         
-        self.title = "Session"
+        self.title = "My Schedule"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:  UIBarButtonSystemItem.Action, target:  self, action: Selector("shareButton"))
         // Uncomment the following line to preserve selection between presentations

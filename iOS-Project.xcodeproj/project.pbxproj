@@ -33,6 +33,7 @@
 		12B899B21CDF0D17000FF5BE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B899B11CDF0D17000FF5BE /* Background.swift */; };
 		12B899B51CDF0DF7000FF5BE /* Login.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12B899B41CDF0DF7000FF5BE /* Login.mp4 */; };
 		12C4E63F1CF2FE3400C58ABC /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4E63E1CF2FE3400C58ABC /* MyScheduleViewController.swift */; };
+		12C755521D00627800AE75B7 /* twittertableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C755511D00627800AE75B7 /* twittertableTableViewController.swift */; };
 		294369BC0DBA59918CA8B764 /* Pods_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F562A8374101C95EB57FD618 /* Pods_iOS_Project.framework */; };
 		5FBA2B7266883306350627F1 /* Pods_iOS_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE0D83E2D16C7F67B09EFD5 /* Pods_iOS_ProjectUITests.framework */; };
 		BCEF2D6ADCCAB75B866CA96D /* Pods_iOS_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73340AA834C7E6A75350EC91 /* Pods_iOS_ProjectTests.framework */; };
@@ -88,6 +89,7 @@
 		12B899B11CDF0D17000FF5BE /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Background.swift; path = ../Background.swift; sourceTree = "<group>"; };
 		12B899B41CDF0DF7000FF5BE /* Login.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Login.mp4; sourceTree = "<group>"; };
 		12C4E63E1CF2FE3400C58ABC /* MyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		12C755511D00627800AE75B7 /* twittertableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twittertableTableViewController.swift; sourceTree = "<group>"; };
 		1E242658BDB8CA9075938791 /* Pods-iOS-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Project/Pods-iOS-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		3144C5E2594A23453D3C80F2 /* Pods-iOS-ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-ProjectUITests/Pods-iOS-ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE0D83E2D16C7F67B09EFD5 /* Pods_iOS_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 				1259C7951CFF3105001E9AB0 /* Session+CoreDataProperties.swift */,
 				1259C7961CFF3105001E9AB0 /* Session.swift */,
 				1259C79B1CFF6800001E9AB0 /* MyScheduleCell.swift */,
+				12C755511D00627800AE75B7 /* twittertableTableViewController.swift */,
 			);
 			path = "iOS-Project";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				1200D6C21CDDC034006164D8 /* Resources */,
 				9827971997AC15D2468EA9D5 /* 📦 Embed Pods Frameworks */,
 				A406B7559B94BE92AA7F2C26 /* 📦 Copy Pods Resources */,
+				12C7554C1D0051D000AE75B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,6 +259,7 @@
 				1200D6D91CDDC034006164D8 /* Resources */,
 				39A1E3F16BAA2B8A69148E8B /* 📦 Embed Pods Frameworks */,
 				29123AC65DF710CFA8E2747A /* 📦 Copy Pods Resources */,
+				1259C79F1D004DC3001E9AB0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -362,6 +367,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1259C79F1D004DC3001E9AB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 37b2f61eafb23e1212105c1789d6724f149431f9 f9e71cce0edb75127c5402251ddbe8272089a9ec562dd9f0117f21751d9b847b";
+		};
+		12C7554C1D0051D000AE75B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 37b2f61eafb23e1212105c1789d6724f149431f9 f9e71cce0edb75127c5402251ddbe8272089a9ec562dd9f0117f21751d9b847b";
+		};
 		17E5A115BE9443C386A6A407 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,6 +532,7 @@
 				1200D6FB1CDDDBA2006164D8 /* SpeakersTableViewController.swift in Sources */,
 				1200D6D01CDDC034006164D8 /* iOS_Project.xcdatamodeld in Sources */,
 				12326C701CFB0C8B00013AEC /* MapViewController.swift in Sources */,
+				12C755521D00627800AE75B7 /* twittertableTableViewController.swift in Sources */,
 				12ACC8AA1CFCC32B00BFB5EA /* MeTableViewController.swift in Sources */,
 				1200D6C81CDDC034006164D8 /* AppDelegate.swift in Sources */,
 				122DB97F1CF1C08C00C33672 /* UserProfileViewController.swift in Sources */,

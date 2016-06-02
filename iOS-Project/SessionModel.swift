@@ -97,8 +97,19 @@ class SessionModel{
                 final.append(one)
             }
         }
-        print("!!!!!!!!!!")
-        print(final.count)
+        
+        let sort = final
+        for i in 0 ..< sort.count
+        {
+            for b in sort {
+                if b.i == i
+                {
+                    final[i] = b
+                    print(b.i)
+                    print(b.topic)
+                }
+            }
+        }
         return final
     }
     

@@ -31,20 +31,23 @@ class ViewController:Background, UITextFieldDelegate {
     //Log in
     func login()
     {
-      dismissKeyboard()
+      //self.model.deleteAllData("Session") // delte all data in database
+        dismissKeyboard()
       allViews.hidden = true
         indicator.startAnimating()
  dispatch_async(dispatch_get_main_queue(), { () -> Void in
         FIRAuth.auth()?.signInWithEmail(self.username.text!, password: self.password.text!) { (user, error) in
             if(error == nil)
             {
-                //self.model.deleteAllData("Session") // delte all data in database
+                
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 //retrieve Json string from firebase database
                     let ref = FIRDatabase.database().reference()
                     ref.observeEventType(FIRDataEventType.Value, withBlock:  { (snapshot) in
                         let all = snapshot.childSnapshotForPath("sessions").value as! NSDictionary
+                        if (self.model.GetSessions().count == 0)
+                        {
                         for one in all
                         {
                             
@@ -62,14 +65,12 @@ class ViewController:Background, UITextFieldDelegate {
                             let topic: String = (json["topic"] as? String)!
                             
                             let my: Bool = false
-                            if self.model.GetSessions().count == 0
-                            {
-                            self.model.CreateCollec(name, day: day, detail: detail, i: i, img: img, img2: img2, my: my, num: num, time: time, start: start, topic: topic)
-                            }
+                            
+                           
+                                self.model.CreateCollec(name, day: day, detail: detail, i: i, img: img, img2: img2, my: my, num: num, time: time, start: start, topic: topic)
+                        }
                         }
                         
-                        print(self.model.GetSessions())
-                        print(self.model.GetSessions().count)
                         self.indicator.stopAnimating()
                         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Home") as! UITabBarController
                         self.presentViewController(viewController, animated: true, completion: nil)
@@ -81,6 +82,7 @@ class ViewController:Background, UITextFieldDelegate {
                 })
             }
             else{
+                //self.model.deleteAllData("Session")
                 let alert: UIAlertController = UIAlertController(title: "Incorrect account or password. Enter again", message: "", preferredStyle: .Alert)
                 
                 
