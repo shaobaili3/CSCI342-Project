@@ -31,14 +31,14 @@ class ViewController:Background, UITextFieldDelegate {
     //Log in
     func login()
     {
-        
+      dismissKeyboard()
       allViews.hidden = true
         indicator.startAnimating()
  dispatch_async(dispatch_get_main_queue(), { () -> Void in
         FIRAuth.auth()?.signInWithEmail(self.username.text!, password: self.password.text!) { (user, error) in
             if(error == nil)
             {
-                self.model.deleteAllData("Session") // delte all data in database
+                //self.model.deleteAllData("Session") // delte all data in database
                 
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 //retrieve Json string from firebase database
@@ -62,7 +62,10 @@ class ViewController:Background, UITextFieldDelegate {
                             let topic: String = (json["topic"] as? String)!
                             
                             let my: Bool = false
+                            if self.model.GetSessions().count == 0
+                            {
                             self.model.CreateCollec(name, day: day, detail: detail, i: i, img: img, img2: img2, my: my, num: num, time: time, start: start, topic: topic)
+                            }
                         }
                         
                         print(self.model.GetSessions())

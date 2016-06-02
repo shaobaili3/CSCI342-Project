@@ -114,6 +114,7 @@ class ScheduleViewController: UITableViewController {
         cell.detail.text = all[indexPath.row].detail
         cell.imgLeft.image = UIImage(named: "1" + all[indexPath.row].img!)
         cell.more.text = all[indexPath.row].name! + " | " + all[indexPath.row].start! + " | " + all[indexPath.row].num!
+        cell.img.image = UIImage(named: "2" + all[indexPath.row].img!)
         if all[indexPath.row].my == true
         {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark

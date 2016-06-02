@@ -34,7 +34,7 @@
                                                     <constraint firstAttribute="width" constant="230" id="UOl-cP-MpC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kZ2-qW-LF0">
                                                 <rect key="frame" x="28" y="90" width="230" height="30"/>
@@ -81,9 +81,6 @@
                                                 <state key="normal" title="More">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="cmh-i1-8a6" kind="show" id="vLg-MD-fJZ"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,14 +167,28 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mg2-83-ZE2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mg2-83-ZE2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Northfields Ave, Wollongong NSW 2522, Australia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX0-nl-Kcy">
+                                <rect key="frame" x="100" y="342" width="400" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0Mu-7q-Jo5"/>
+                                    <constraint firstAttribute="height" constant="45" id="bZb-gD-lGz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Ptg-zp-sDK" firstAttribute="top" secondItem="Mg2-83-ZE2" secondAttribute="bottom" id="0AE-mM-3bh"/>
                             <constraint firstItem="Mg2-83-ZE2" firstAttribute="leading" secondItem="Ymr-jx-LTq" secondAttribute="leading" id="0pG-qn-6GF"/>
+                            <constraint firstItem="Ptg-zp-sDK" firstAttribute="top" secondItem="UX0-nl-Kcy" secondAttribute="bottom" constant="100" id="Mmt-W9-K9K"/>
                             <constraint firstItem="Mg2-83-ZE2" firstAttribute="top" secondItem="LJW-6X-8D7" secondAttribute="bottom" id="SJF-9o-tOy"/>
+                            <constraint firstItem="UX0-nl-Kcy" firstAttribute="centerX" secondItem="Ymr-jx-LTq" secondAttribute="centerX" id="asl-iF-7qB"/>
                             <constraint firstAttribute="trailing" secondItem="Mg2-83-ZE2" secondAttribute="trailing" id="gW8-Gz-ETw"/>
                         </constraints>
                     </view>
@@ -782,7 +793,7 @@
             </objects>
             <point key="canvasLocation" x="-225" y="1729"/>
         </scene>
-        <!--Me Table View Controller-->
+        <!--Me-->
         <scene sceneID="EwG-qc-kBi">
             <objects>
                 <tableViewController id="Qhh-MH-tbp" customClass="MeTableViewController" customModule="iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -816,7 +827,7 @@
                             </tableViewSection>
                             <tableViewSection id="eky-9T-dbN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="R9D-oM-EE9" detailTextLabel="fHo-yT-yDz" style="IBUITableViewCellStyleValue1" id="B61-aX-hoH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="R9D-oM-EE9" detailTextLabel="fHo-yT-yDz" imageView="nqr-ST-zCk" style="IBUITableViewCellStyleValue1" id="B61-aX-hoH">
                                         <rect key="frame" x="0.0" y="206" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B61-aX-hoH" id="jT6-FX-dlb">
@@ -824,7 +835,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9D-oM-EE9">
-                                                    <rect key="frame" x="15" y="12" width="75" height="20"/>
+                                                    <rect key="frame" x="73" y="12" width="75" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -837,10 +848,14 @@
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="contact_card" id="nqr-ST-zCk">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8Q2-uo-Nl2" detailTextLabel="Vsu-gM-tzR" style="IBUITableViewCellStyleValue1" id="FYb-SB-0oy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8Q2-uo-Nl2" detailTextLabel="Vsu-gM-tzR" imageView="55W-Ou-NZI" style="IBUITableViewCellStyleValue1" id="FYb-SB-0oy">
                                         <rect key="frame" x="0.0" y="250" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FYb-SB-0oy" id="IPG-SZ-bMi">
@@ -848,7 +863,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Q2-uo-Nl2">
-                                                    <rect key="frame" x="15" y="12" width="47" height="20"/>
+                                                    <rect key="frame" x="73" y="12" width="47" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -861,10 +876,14 @@
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="phone" id="55W-Ou-NZI">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="VAc-ja-4Ju" detailTextLabel="df1-6m-SSx" style="IBUITableViewCellStyleValue1" id="qVc-xq-Oam">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="VAc-ja-4Ju" detailTextLabel="df1-6m-SSx" imageView="5X4-Qb-dOp" style="IBUITableViewCellStyleValue1" id="qVc-xq-Oam">
                                         <rect key="frame" x="0.0" y="294" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qVc-xq-Oam" id="CEL-Rj-2F9">
@@ -872,7 +891,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAc-ja-4Ju">
-                                                    <rect key="frame" x="15" y="12" width="51" height="20"/>
+                                                    <rect key="frame" x="73" y="12" width="51" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -885,6 +904,10 @@
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="twitter" id="5X4-Qb-dOp">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -892,7 +915,7 @@
                             </tableViewSection>
                             <tableViewSection id="c0G-oe-Xtv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="alb-2b-BTp" style="IBUITableViewCellStyleDefault" id="ejN-nA-gEA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="alb-2b-BTp" imageView="Ail-6J-TZu" style="IBUITableViewCellStyleDefault" id="ejN-nA-gEA">
                                         <rect key="frame" x="0.0" y="374" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ejN-nA-gEA" id="XUl-oW-Yxg">
@@ -900,16 +923,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="alb-2b-BTp">
-                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <rect key="frame" x="73" y="0.0" width="492" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="home" id="Ail-6J-TZu">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="OfD-Yg-doL" style="IBUITableViewCellStyleDefault" id="Lux-kS-ZFy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="OfD-Yg-doL" imageView="nWe-GF-NmJ" style="IBUITableViewCellStyleDefault" id="Lux-kS-ZFy">
                                         <rect key="frame" x="0.0" y="418" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lux-kS-ZFy" id="xTb-35-Eho">
@@ -917,16 +944,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Report a Problem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OfD-Yg-doL">
-                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <rect key="frame" x="73" y="0.0" width="492" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="message" id="nWe-GF-NmJ">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0V1-6a-gkx" style="IBUITableViewCellStyleDefault" id="bG9-Dx-er0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0V1-6a-gkx" imageView="art-3l-n5D" style="IBUITableViewCellStyleDefault" id="bG9-Dx-er0">
                                         <rect key="frame" x="0.0" y="462" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bG9-Dx-er0" id="GaM-yD-DtD">
@@ -934,12 +965,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0V1-6a-gkx">
-                                                    <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                                    <rect key="frame" x="73" y="0.0" width="492" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="help" id="art-3l-n5D">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -972,7 +1007,7 @@
                             <outlet property="delegate" destination="Qhh-MH-tbp" id="EvT-Xj-fVf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rd5-dd-vZb"/>
+                    <navigationItem key="navigationItem" title="Me" id="rd5-dd-vZb"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apX-sW-j3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1028,7 +1063,12 @@
         <image name="Cook" width="120" height="124"/>
         <image name="Cook2" width="120" height="124"/>
         <image name="angela_ahrendts" width="780" height="352"/>
+        <image name="contact_card" width="48" height="48"/>
         <image name="federighi" width="575" height="657"/>
+        <image name="help" width="48" height="48"/>
+        <image name="home" width="48" height="48"/>
+        <image name="message" width="48" height="48"/>
+        <image name="phone" width="48" height="48"/>
         <image name="tabbar_Schedule" width="25" height="25"/>
         <image name="tabbar_contacts" width="26" height="22"/>
         <image name="tabbar_contactsHL" width="26" height="22"/>
@@ -1039,6 +1079,7 @@
         <image name="tabbar_me" width="22" height="22"/>
         <image name="tabbar_meHL" width="22" height="22"/>
         <image name="tim-cook" width="780" height="352"/>
+        <image name="twitter" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kpA-ly-fAr"/>
