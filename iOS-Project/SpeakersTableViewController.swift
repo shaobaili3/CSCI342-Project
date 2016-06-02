@@ -50,7 +50,7 @@ class SpeakersTableViewController: UITableViewController {
         cell.textLabel?.text = "Tim Cook"
         cell.detailTextLabel?.text = "@tim_cook"
         
-        let image = UIImage(named: "Cook2")
+        let image = UIImage(named: "Cook")
         let newImage = resizeImage(image!, toTheSize: CGSizeMake(70, 70))
         let cellImageLayer: CALayer?  = cell.imageView!.layer
         cellImageLayer!.cornerRadius = 35

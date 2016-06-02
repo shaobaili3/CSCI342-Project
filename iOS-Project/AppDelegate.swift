@@ -8,16 +8,18 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        //UINavigationBar.appearance().barTintColor = (can set all UInavigationbar back ground color)
+
+        //initial firebase
+        FIRApp.configure()
         
         //set Naviationbar front color
         UINavigationBar.appearance().tintColor = .whiteColor()
