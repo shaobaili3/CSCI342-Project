@@ -26,6 +26,7 @@
 		1259C7981CFF3105001E9AB0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259C7961CFF3105001E9AB0 /* Session.swift */; };
 		1259C79A1CFF4108001E9AB0 /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259C7991CFF4108001E9AB0 /* SessionCell.swift */; };
 		1259C79C1CFF6800001E9AB0 /* MyScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259C79B1CFF6800001E9AB0 /* MyScheduleCell.swift */; };
+		127078281D012AFD009C0D57 /* twitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127078261D012AFD009C0D57 /* twitterViewController.swift */; };
 		12ACC89E1CFC122800BFB5EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12ACC89D1CFC122800BFB5EA /* Main.storyboard */; };
 		12ACC8A81CFCAB9900BFB5EA /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACC8A71CFCAB9900BFB5EA /* SessionDetailViewController.swift */; };
 		12ACC8AA1CFCC32B00BFB5EA /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACC8A91CFCC32B00BFB5EA /* MeTableViewController.swift */; };
@@ -82,6 +83,7 @@
 		1259C7961CFF3105001E9AB0 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1259C7991CFF4108001E9AB0 /* SessionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		1259C79B1CFF6800001E9AB0 /* MyScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleCell.swift; sourceTree = "<group>"; };
+		127078261D012AFD009C0D57 /* twitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitterViewController.swift; sourceTree = "<group>"; };
 		12ACC89D1CFC122800BFB5EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		12ACC8A71CFCAB9900BFB5EA /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		12ACC8A91CFCC32B00BFB5EA /* MeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				1209E0431CFD622F00106C77 /* GoogleService-Info.plist */,
 				12ACC89D1CFC122800BFB5EA /* Main.storyboard */,
+				127078261D012AFD009C0D57 /* twitterViewController.swift */,
 				1200D6C71CDDC034006164D8 /* AppDelegate.swift */,
 				1200D6C91CDDC034006164D8 /* ViewController.swift */,
 				122DB9801CF1DED800C33672 /* PasswordViewController.swift */,
@@ -526,6 +529,7 @@
 				12B899B01CDF0CCB000FF5BE /* VideoCutter.swift in Sources */,
 				12ACC8A81CFCAB9900BFB5EA /* SessionDetailViewController.swift in Sources */,
 				1259C7971CFF3105001E9AB0 /* Session+CoreDataProperties.swift in Sources */,
+				127078281D012AFD009C0D57 /* twitterViewController.swift in Sources */,
 				1200D6CA1CDDC034006164D8 /* ViewController.swift in Sources */,
 				1259C79C1CFF6800001E9AB0 /* MyScheduleCell.swift in Sources */,
 				12B899B21CDF0D17000FF5BE /* Background.swift in Sources */,
