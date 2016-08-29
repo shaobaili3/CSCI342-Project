@@ -11,6 +11,7 @@ import CoreData
 import Firebase
 import Fabric
 import TwitterKit
+import Mapbox
 
 
 @UIApplicationMain
@@ -19,17 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        
         // Override point for customization after application launch.
         
         //install Fabric
-        Fabric.with([Twitter.self])
+        Fabric.with([Twitter.self, MGLAccountManager.self])
 
         
         //install firebase
         FIRApp.configure()
         
         //set Naviationbar front color
-        UINavigationBar.appearance().tintColor = .whiteColor()
+        //UINavigationBar.appearance().tintColor = .whiteColor()
+        
+        configureStyling()
+        
+        
         return true
     }
 
@@ -122,3 +129,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+private extension AppDelegate {
+    
+    func configureStyling() {
+        
+        let tintColor = UIColor(red: 0.72, green: 0.08, blue: 0.08, alpha: 1)
+        
+        window?.tintColor = tintColor
+        
+        
+        UINavigationBar.appearance().barTintColor = tintColor
+        UINavigationBar.appearance().tintColor = .whiteColor()
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().barStyle = .BlackTranslucent
+    }
+}

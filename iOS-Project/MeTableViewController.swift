@@ -22,7 +22,7 @@ class MeTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        if indexPath.section == 3
+        if indexPath.section == 1
         {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController

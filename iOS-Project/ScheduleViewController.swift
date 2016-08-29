@@ -42,30 +42,33 @@ class ScheduleViewController: UITableViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let all = model.getByDay(currentDay)
-        let target = segue.destinationViewController as! SessionDetailViewController
-        let row = self.tableView.indexPathForSelectedRow?.row
-        target.name1 = all[row!].name
-        switch(days.selectedSegmentIndex)
-        {
-        case 0:
-            target.date1 = "Tuesday,  6 December, " + all[row!].time!
-            break
-        case 1:
-            target.date1 = "Wednesday,  7 December, " + all[row!].time!
-            break
-        case 2:
-            target.date1 = "Thursday,  8 December, " + all[row!].time!
-            break
-        default:
-            break
-        }
-        target.number1 = "Session" + all[row!].num!
-        target.topic1 = all[row!].topic
-        target.detail1 = all[row!].detail
-        target.img1 = all[row!].img
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let all = model.getByDay(currentDay)
+//        if ((segue.destinationViewController as? SessionDetailViewController) != nil)
+//        {
+//            let target = segue.destinationViewController as! SessionDetailViewController
+//        let row = self.tableView.indexPathForSelectedRow?.row
+//        target.name1 = all[row!].name
+//        switch(days.selectedSegmentIndex)
+//        {
+//        case 0:
+//            target.date1 = "Tuesday,  6 December, " + all[row!].time!
+//            break
+//        case 1:
+//            target.date1 = "Wednesday,  7 December, " + all[row!].time!
+//            break
+//        case 2:
+//            target.date1 = "Thursday,  8 December, " + all[row!].time!
+//            break
+//        default:
+//            break
+//        }
+//        target.number1 = "Session" + all[row!].num!
+//        target.topic1 = all[row!].topic
+//        target.detail1 = all[row!].detail
+//        target.img1 = all[row!].img
+//        }
+//    }
     
     override func viewDidLoad() {
         
@@ -106,15 +109,13 @@ class ScheduleViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SessionCell
-        
-
         // Configure the cell...
         let all = model.getByDay(currentDay)
         cell.topic.text = all[indexPath.row].topic
-        cell.detail.text = all[indexPath.row].detail
-        cell.imgLeft.image = UIImage(named: "1" + all[indexPath.row].img!)
-        cell.more.text = all[indexPath.row].name! + " | " + all[indexPath.row].start! + " | " + all[indexPath.row].num!
-        cell.img.image = UIImage(named: "2" + all[indexPath.row].img!)
+        //cell.detail.text = all[indexPath.row].detail
+        //cell.imgLeft.image = UIImage(named: "1" + all[indexPath.row].img!)
+        cell.more.text = "Chair: " + all[indexPath.row].name!
+        //cell.img.image = UIImage(named: "2" + all[indexPath.row].img!)
         if all[indexPath.row].my == true
         {
             cell.accessoryType = UITableViewCellAccessoryType.Checkmark
@@ -137,12 +138,12 @@ class ScheduleViewController: UITableViewController {
     
 
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        let add = UITableViewRowAction(style: .Default, title: "Add to My Schedule") { (action, indexPath) in
+        let add = UITableViewRowAction(style: .Default, title: "Add to My Agenda") { (action, indexPath) in
             self.model.favoriate(self.model.getByDay(self.currentDay)[indexPath.row])
             self.tableView.reloadData()
         }
         
-        let delete = UITableViewRowAction(style: .Destructive, title: "Remove from My Schedule") { (action, indexPath) in
+        let delete = UITableViewRowAction(style: .Destructive, title: "Remove from My Agenda") { (action, indexPath) in
             print(indexPath.row)
             self.model.favoriate(self.model.getByDay(self.currentDay)[indexPath.row])
             

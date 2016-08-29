@@ -1,25 +1,23 @@
 //
-//  UserProfileViewController.swift
+//  SearchViewController.swift
 //  iOS-Project
 //
-//  Created by SABai on 22/05/2016.
+//  Created by SABai on 23/07/2016.
 //  Copyright © 2016 Shaobai Li. All rights reserved.
 //
 
 import UIKit
 
-class UserProfileViewController: UIViewController {
-    @IBAction func logOff(sender: AnyObject) {
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController
-            self.presentViewController(viewController, animated: true, completion: nil)
-        })
-        
+class SearchViewController: UIViewController {
+
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
     }
     
+    @IBOutlet weak var searchBar: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        searchBar.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
 

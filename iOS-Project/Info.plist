@@ -37,10 +37,25 @@
 				<key>KitName</key>
 				<string>Twitter</string>
 			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>accessToken</key>
+					<string>pk.eyJ1Ijoic3Rvcm0zIiwiYSI6ImNpc2EyM3FwMjAwNnYyeHBhZGRiOXhkczQifQ.2BxYkSBJ6gYK_4kUvsa2hA.2BxYkSBJ6gYK_4kUvsa2hA</string>
+				</dict>
+				<key>KitName</key>
+				<string>MGLAccountManager</string>
+			</dict>
 		</array>
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location will be shown on the map and your map usage will anonymously improve the map.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

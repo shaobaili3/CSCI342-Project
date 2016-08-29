@@ -31,7 +31,9 @@ class ViewController:Background, UITextFieldDelegate {
     //Log in
     func login()
     {
-      //self.model.deleteAllData("Session") // delte all data in database
+      
+        self.model.deleteAllData("Session") // delte all data in database
+        
         dismissKeyboard()
       allViews.hidden = true
         indicator.startAnimating()
@@ -52,7 +54,18 @@ class ViewController:Background, UITextFieldDelegate {
                         {
                             
                             let json = one.value as! NSDictionary
-                            let name: String = (json["name"] as? String)!
+                            //var name: String = "Nothing!!!!!!!!!!!!!!!!!"
+                            var na: String = "Tim Cook"
+                            if  let name: String = (json["name"] as? String)
+                            {
+                                na = name
+                                print("good")
+                            }
+                            else
+                            {
+                                print("nothing")
+                            }
+                            
                             let tempDay = json["day"]!
                             let day: String! = String(tempDay)
                             let detail: String = (json["detail"] as? String)!
@@ -67,7 +80,7 @@ class ViewController:Background, UITextFieldDelegate {
                             let my: Bool = false
                             
                            
-                                self.model.CreateCollec(name, day: day, detail: detail, i: i, img: img, img2: img2, my: my, num: num, time: time, start: start, topic: topic)
+                                self.model.CreateCollec(na, day: day, detail: detail, i: i, img: img, img2: img2, my: my, num: num, time: time, start: start, topic: topic)
                         }
                         }
                         
@@ -82,7 +95,7 @@ class ViewController:Background, UITextFieldDelegate {
                 })
             }
             else{
-                //self.model.deleteAllData("Session")
+                self.model.deleteAllData("Session")
                 let alert: UIAlertController = UIAlertController(title: "Incorrect account or password. Enter again", message: "", preferredStyle: .Alert)
                 
                 
