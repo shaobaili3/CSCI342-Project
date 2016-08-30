@@ -11,13 +11,63 @@ import TwitterKit
 import Fabric
 
 
-class twitterViewController: TWTRTimelineViewController {
+class twitterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //https://twitter.com/BuzzNutDesign/timelines/738556083229204480
-        let client = TWTRAPIClient()
-        self.dataSource = TWTRCollectionTimelineDataSource(collectionID: "738556083229204480", APIClient: client)
+        
+        self.title = "Twitter"
+        
+        self.view.backgroundColor = UIColor.grayColor()
+        TWTRAPIClient().loadTweetWithID("737845565594173441") { (tweet, error) in
+            if let unwrappedTweet = tweet {
+                let tweetView = TWTRTweetView(tweet: unwrappedTweet)
+                //tweetView.center = CGPointMake(self.view.center.x, self.topLayoutGuide.length + tweetView.frame.size.height / 2);
+                tweetView.configureWithTweet(tweet)
+                tweetView.showActionButtons = true
+                var test = TWTRTweetView(tweet: tweet, style: .Regular)
+                test.center = CGPointMake(self.view.center.x,180)
+                test.configureWithTweet(tweet)
+                test.showActionButtons = true
+                self.view.addSubview(test)
+            } else {
+                NSLog("Tweet load error: %@", error!.localizedDescription);
+            }
+        }
+        
+        TWTRAPIClient().loadTweetWithID("769218876286480384") { (tweet, error) in
+            if let unwrappedTweet = tweet {
+                let tweetView = TWTRTweetView(tweet: unwrappedTweet)
+                tweetView.center = CGPointMake(self.view.center.x, 600 + tweetView.frame.size.height / 2);
+                tweetView.configureWithTweet(tweet)
+                tweetView.showActionButtons = true
+                var test = TWTRTweetView(tweet: tweet, style: .Regular)
+                test.center = CGPointMake(self.view.center.x, 410 + tweetView.frame.size.height / 2)
+                test.configureWithTweet(tweet)
+                test.showActionButtons = true
+                self.view.addSubview(test)
+            } else {
+                NSLog("Tweet load error: %@", error!.localizedDescription);
+            }
+        }
+        
+        TWTRAPIClient().loadTweetWithID("769218876286480384") { (tweet, error) in
+            if let unwrappedTweet = tweet {
+                let tweetView = TWTRTweetView(tweet: unwrappedTweet)
+                tweetView.center = CGPointMake(self.view.center.x, 600 + tweetView.frame.size.height / 2);
+                tweetView.configureWithTweet(tweet)
+                tweetView.showActionButtons = true
+                var test = TWTRTweetView(tweet: tweet, style: .Regular)
+                test.center = CGPointMake(self.view.center.x, 730 + tweetView.frame.size.height / 2)
+                test.configureWithTweet(tweet)
+                test.showActionButtons = true
+                self.view.addSubview(test)
+            } else {
+                NSLog("Tweet load error: %@", error!.localizedDescription);
+            }
+        }
+        
+
 
     }
 
